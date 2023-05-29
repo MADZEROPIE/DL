@@ -13,7 +13,6 @@ RUN pip install tensorflow==2.6.0
 RUN pip install keras==2.6.0
 RUN pip install opencv-python
 RUN pip install Pillow
-RUN pip install Pillow
 RUN pip install protobuf==3.20.1
 
 COPY test.py /test.py
