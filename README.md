@@ -21,11 +21,7 @@ docker build . --tag explainer
 ```
 docker run -v $(pwd)/images/result:/src explainer
 ```
-5. Если поcле работы докера не удается удалить папку result, воспользуйтесь командой, которая изменяет владельца папки result
-```
-sudo chown -R $(whoami):$(whoami) result
-```
-6. Чтобы снести всё в системе (КРАЙНЕ РАДИКАЛЬНЫЙ СПОСОБ!)
+5. Чтобы снести всё в системе (КРАЙНЕ РАДИКАЛЬНЫЙ СПОСОБ!)
 ```
 docker rm -vf $(docker ps -aq)
 docker rmi -f $(docker images -aq)
